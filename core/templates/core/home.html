@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="border-right border-warning h-100 mt-2">
+    <div class="text-center ">
+        <img src="{% static 'core/images/adi3.jpg' %}" alt="adi-logo images" class="img-fluid img-thumbnail" class="sps">
+       <ol style="color:rgb(234, 241, 241);font-weight: bolder;text-align:center;"> KUMMETHA ADI NARAYANA REDDY</ol>
+    </div>
+</div>
+<br>
+<main role="main">
+    <div class="data">
+        <div style="margin-bottom: 120px;color: white;">
+            <h1 class="font-weight-bold"></h1>
+        </div>
+        <div style="font-family: Cambria;color: white;font-size:30px;">Hello,</div><br>
+        <div style="text-align: justify;">
+            <p style="text-indent: 100px;">
+                i am <b class="text-primary;">ADI NARAYANA REDDY KUMMETHA</b> havinig 2 months of full-stack development
+                As a Front End Dev I'm
+                resposible to create creative layouts,
+                That layouts should useful to other Developers can they use very easily in their Project and this help
+                they work very easier
+            </p>
+            <h4> Web Designer</h4>
+            <p>I'm Really enthusiastic to design a site before developing then the clients and users can get a overview
+                what is the final product.</p>
+            <h4>Django</h4>
+            <p class="text-white">
+                i can Build a websites Using web Development Using Django Frame-Work I have some of Expericence in
+                Django Frame work so it is eassily build spam of time sites Radicules advantages of django-sites
+            </p>
+        </div>
+        <p class="lead">
+            <a href="{% url 'contact' %}" class="btn btn-lg btn-outline-info">Contact Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-lg btn-outline-warning "><b>Hiring</b> </a>
+         
+        </p>
+    </div>
+</main>
+{% endblock content %}

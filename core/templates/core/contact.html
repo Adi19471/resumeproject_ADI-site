@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container">
+    <h2 style="color: coral;border: 2px;">CONTACT US</h2>
+
+
+    <small style="color:rgb(46, 46, 126);text-align: center;margin-left: 320px;font-size: 13px;">DO you have any Queriece?
+        Please Do Not hesitate to contact.I will come back to you within a matter of hours
+        to helps you</small>
+</div>
+<div col-md-5 img-thumbnail>
+    <div id="feedback">
+        <div class="container">
+            <div class="col-md-5">
+                <div class="form-area">
+                    <form role="form" method="POST">
+                        {% csrf_token %}
+                        <br style="clear:both">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email"
+                                required>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Address"
+                                required>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                required>
+                        </div><br>
+                        <div class="form-group">
+                            <textarea class="form-control" type="textarea" id="message" placeholder="Message"
+                                maxlength="140" rows="7"></textarea>
+                            <span class="help-block">
+                                <p id="characterLeft" class="help-block ">Enter Your Feelings</p>
+                            </span>
+                        </div><br>
+
+                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--feedback-->
+
+    <h3 style="color: rgb(26, 4, 16);margin:-480px 0px 0px 700px;font-size: 20px;">
+        <i class="fas fa-map-marked-alt fa-4x"></i>
+        <a
+            href="https://www.bing.com/maps?q=mumbainare+map+puna&qs=n&form=QBRE&sp=-1&pq=mumbainare+map+&sc=0-15&sk=&cvid=1C1ADDC5C35D468ABB3F8E0117F5ABB4"><b>Mumbai
+                gana area 411001</b><br></a>
+        <i class="fas fa-envelope-square fa-4x"></i>
+        <a href="https://mail.googless.com/maillll/u/0/#ainbox"><b>akumatha@gmail.com</b><br></a>
+        <i class="fas fa-mobile fa-4x"></i>
+        <a href="https://www.truecaller.com/"><b>9398895448</b><br></a>
+        <i class="fab fa-whatsapp-square fa-6x"></i>
+        <a href="https://web.whatsapp.com/"><b>8341553216</b><br></a>
+    </h3>
+    {% endblock %}
